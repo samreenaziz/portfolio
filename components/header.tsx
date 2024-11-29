@@ -19,7 +19,7 @@ export default function Header() {
                         <motion.li key={link.hash} className="h-3/4 flex items-center justify-center"
                         initial={{y: -100, opacity:1}}
                         animate={{y:0, opacity:1}}>
-                            <Link className="flex w-full items-center justify-center px-3 py-3 hover:text-blue-900 cursor-pointer hover:bg-gray-100 rounded-none hover:sm:rounded-full" href={link.hash}>
+                            <Link className="flex w-full items-center justify-center px-3 py-3 hover:text-blue-900 cursor-pointer hover:bg-gray-100 rounded-none hover:rounded-full" href={link.hash}>
                                 {link.name}
                             </Link>
                         </motion.li>
