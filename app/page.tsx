@@ -8,6 +8,8 @@ export default function Home() {
       <Intro />
       <SectionDivider/>
       <About />
+      <SectionDivider/>
+
     </main>
   )
 }

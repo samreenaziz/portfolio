@@ -56,7 +56,7 @@ export default function Intro() {
                     opacity: 1,
                     rotate: [0, 10, -10, 10, -10, 10, -10, 5, -5, 0],
                 }}
-                className="font-bold text-purple-900 text-4xl "
+                className="font-bold text-[#D81B60] text-4xl "
                 style={{ transformOrigin: "center", display: "inline-block"  }}
                 transition={{
                     duration: 2,
@@ -103,11 +103,9 @@ export default function Intro() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ type: "tween", delay: 1.0 }}
-            className="mb-10 mt-2 font-medium leading-[1.5] sm:p-8 text-4xl text-center sm:mb:0"
+            className="mb-10 mt-2 font-medium leading-[1.5] sm:p-8 text-3xl text-center sm:mb:0"
             >
-            <span className="font-bold"> A neuroscientist turned biomedical engineer, with 5+ years of experience</span> as a technical consultant, software developer, AI solutioneer, and data scientist,
-            I focus on creating empathetic and practical digital solutions that improve consumers' day-to-day, while continuously growing my technical finesse. Currently, I enjoy building
-            {" "}<span className="italic underline">innovative websites and iOS applications with Next.js and SwiftUI</span>.
+            <span className="font-bold"> A neuroscientist turned biomedical engineer, with 5+ years of experience</span> as a technical consultant, software developer, AI solutioneer, and data scientist.
         </motion.p>
     </section>
     )
