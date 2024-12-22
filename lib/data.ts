@@ -4,9 +4,14 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import cuppaImg from "@/public/cuppa.png";
 import topgunImg from "@/public/topgun.png";
-import travelSiteImg from "@/public/travelsite.png";
 import bandSiteImg from "@/public/bandsite1.png";
-import coffeeShopImg from "@/public/coffeeshop.png";
+import bandSiteImg2 from "@/public/bandsite2.png";
+import aircallImg from "@/public/aircall.png";
+import thesisImg from "@/public/thesisImg.png";
+import thesisImg2 from "@/public/thesisImg2.png";
+import thesisAwardImg from "@/public/best-student-paper.png"
+
+
 
 
 export const links = [
@@ -67,27 +72,49 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const softwareProjectsData = [
   {
     title: "Cuppa",
     description:
       "This is an MVP of a postpartum peer-support application that I am building as part of my efforts to support women's digital health resources. I am the full-stack developer for this project.",
     tags: ["React", "Express", "Node.js", "MySQL", "CSS/Sass", "Google Cloud Console", "Google API", "Heroku CLI", "JawsDB"],
-    imageUrl: cuppaImg,
+    industries: ["Digital Health", "Postpartum Care", "Biomedical Engineering", "Medical Technologies"],
+    images: [cuppaImg],
   },
   {
     title: "Hunter Safety Education Booking Site",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "A course-booking website for a Canadian Hunter Safety Education academy in Toronto. This website is largely a SPA and integrates a booking widget and Framer Motion flip-cards for interactivity",
     tags: ["React", "Express.js", "Node.js", "MySQL", "CSS/Sass", "Framer Motion"],
-    imageUrl: topgunImg,
+    industries: ["Commercial Business"],
+    images: [topgunImg],
   },
   {
     title: "Promotional Band Site",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Express.js", "Node.js", "MySQL", "CSS/Sass"],
-    imageUrl: bandSiteImg,
+      "An promotional website for a new community group/band. A simple SPA pulling data from a public API using component re-rendering.",
+    tags: ["React", "CSS/Sass"],
+    industries: ["Art/Music"],
+    images: [bandSiteImg],
+  },
+  {
+    title: "AirCall",
+    description:
+      "A web application that enables seamless Wi-Fi calling and communication. Designed for modern businesses, it integrates with various tools to enhance productivity and streamline customer communication.",
+    tags: ["React.js", "CSS/Sass", "Public API"],
+    industries: ["Social Media/Networking"],
+    images: [aircallImg],
+  },
+] as const;
+
+export const researchData = [
+  {
+    title: "Master's Thesis",
+    description:
+      "This thesis investigates using centre of pressure (COP) signals from a pressure-sensitive mat to detect patient movement and classify its directionality in real-time. The study achieved improved motion detection with precision = 0.84 and recall = 0.71, and a classifier accuracy of 87.29%, precision = 0.90, and recall = 0.84 after incorporating additional hand-annotated data.",
+    tags: ["MATLAB", "Python", "Machine Learning", "Data Science", "Electrical Engineering", "Systems Engineering", "Support Vector Machines", "kNN", "Synthetic Minority Oversampling Technique", "Medical Systems AI"],
+    industries: ["Biomedical Engineering", "Medical Technologies"],
+    images: [thesisImg2, thesisAwardImg, thesisImg],
   },
 ] as const;
 

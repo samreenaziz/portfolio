@@ -6,7 +6,7 @@ import SectionHeading from "./section-heading";
 
 export default function About() {
   return (
-    <motion.section id="about" className = "b-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+    <motion.section id="about" className = "b-28 max-w-[45rem] text-center leading-8"
         initial={{ opacity: 0, y:100 }}
         animate = {{ opacity: 1, y:0 }}
         transition = {{ delay: 0.175}}
@@ -32,7 +32,7 @@ export default function About() {
         </p>
 
         <motion.div
-                className="ml-8 pl-8 my-8 border-l-2 border-gray-700" initial={{ opacity: 0, y: 50 }}
+                className="ml-8 pl-8 mt-8 sm:mt-4 border-l-2 border-gray-700" initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
         >
             <ol className="justify-left text-left list-none">

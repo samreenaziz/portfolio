@@ -103,7 +103,7 @@ export default function Intro() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ type: "tween", delay: 1.0 }}
-            className="mb-10 mt-2 font-medium leading-[1.5] sm:p-8 text-3xl text-center sm:mb:0"
+            className="mt-2 font-medium leading-[1.5] sm:p-8 text-3xl text-center sm:mb:0"
             >
             <span className="font-bold"> A neuroscientist turned biomedical engineer, with 5+ years of experience</span> as a technical consultant, software developer, AI solutioneer, and data scientist.
         </motion.p>
