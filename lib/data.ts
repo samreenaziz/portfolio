@@ -24,12 +24,12 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Education",
-    hash: "#education",
-  },
-  {
     name: "Projects",
     hash: "#projects",
+  },
+  {
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Skills",
@@ -111,12 +111,13 @@ export const researchData = [
   {
     title: "Master's Thesis",
     description:
-      "This thesis investigates using centre of pressure (COP) signals from a pressure-sensitive mat to detect patient movement and classify its directionality in real-time. The study achieved improved motion detection with precision = 0.84 and recall = 0.71, and a classifier accuracy of 87.29%, precision = 0.90, and recall = 0.84 after incorporating additional hand-annotated data.",
-    tags: ["MATLAB", "Python", "Machine Learning", "Data Science", "Electrical Engineering", "Systems Engineering", "Support Vector Machines", "kNN", "Synthetic Minority Oversampling Technique", "Medical Systems AI"],
+      "This thesis investigates using centre of pressure (COP) signals from a pressure-sensitive mat to detect patient movement.",
+    tags: ["MATLAB", "Python", "Machine Learning", "Data Science"],
     industries: ["Biomedical Engineering", "Medical Technologies"],
     images: [thesisImg2, thesisAwardImg, thesisImg],
   },
-] as const;
+];
+
 
 export const skillsData = [
   "HTML",
@@ -128,11 +129,7 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
   "Python",

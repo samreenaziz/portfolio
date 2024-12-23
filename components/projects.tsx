@@ -1,12 +1,12 @@
 import React from 'react'
 import SectionHeading from './section-heading'
 import {softwareProjectsData, researchData} from '../lib/data'
-import type {StaticImageData } from 'next/image';
-import Image from "next/image";
+import Project from '@/components/project';
+import SectionDivider from '@/components/section-divider'
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects" className="flex-col justify-center">
         <SectionHeading>General Projects</SectionHeading>
         <div>
             {softwareProjectsData.map((project, index) => (
@@ -16,93 +16,38 @@ export default function Projects() {
             ))
             }
         </div>
-        <SectionHeading>Research & Publications</SectionHeading>
+        <SectionDivider/>
+        <SectionHeading>Research</SectionHeading>
         <div>
             {researchData.map((project, index) => (
                 <React.Fragment key={index}>
                     <Project {...project} />
+                        <div className = "flex font-medium text-2xl justify-center pb-2 sm:pb-4"> Citations & Publications </div>
+                        <div className="pl-4 pr-4 sm:pl-6 sm:pr-6 lg:pl-8 lg:pr-8">
+                            <ol className="list-decimal pl-6">
+                                <li>
+                                    Best Student Paper Award at Medical Measurements and Applications Symposium 2020: S. Aziz, Y. S. Dosso,
+                                    S. Nizami, K. Greenwood, J. Harrold and J. R. Green,
+                                    "Detection of Neonatal Patient Motion Using a Pressure-Sensitive Mat”, 2020
+                                    IEEE International Symposium on Medical Measurements and Applications (MeMeA), Bari, Italy, 2020, pp. 1-6, doi:
+                                    10.1109/MeMeA49120.2020.913.147. <br></br><a href="https://dl.acm.org/doi/10.1109/MeMeA49120.2020.9137147" className="flex justify-end font-medium font-[#dbd7fb] hover:text-[#f67075]">Read Here</a>
+                                </li>
+                                <li>
+                                    Dosso, Y. S., Aziz, S., Nizami, S., Greenwood, K., Harrold, J., & Green, J. R. (2020, June). Neonatal Face Tracking for Non-
+                                    Contact Continuous Patient Monitoring. In 2020 IEEE International Symposium on Medical Measurements and
+                                    Applications (MeMeA) (pp. 1-6). IEEE. <br></br><a href="https://dl.acm.org/doi/abs/10.1109/MeMeA49120.2020.9137300" className="flex justify-end font-medium font-[#dbd7fb] hover:text-[#f67075]">Read Here</a>
+                                </li>
+                                <li>
+                                    Dosso, Y. S., Aziz, S., Nizami, S., Greenwood, K., Harrold, J., & Green, J. R. (2020, July). Video based neonatal motion detection.
+                                    In 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC) (pp. 6135
+                                    6138). IEEE. <br></br><a href="https://pubmed.ncbi.nlm.nih.gov/33019371/" className="flex justify-end font-medium font-[#dbd7fb] hover:text-[#f67075]">Read Here</a>
+                                </li>
+                            </ol>
+                        </div>
                 </React.Fragment>
             ))
             }
         </div>
     </section>
   )
-}
-
-type ProjectProps = {
-    title: string;
-    description: string;
-    tags: readonly string[];
-    industries: readonly string[];
-    images: readonly string[] | readonly StaticImageData[];
-  };
-
-function Project({title, description, tags, industries, images} : ProjectProps) {
-    return (
-        <section className="group bg-gray-100 max-w-[42rem] mb-3 sm:mb-8 border h-auto border-black/5 overflow-hidden sm:pr-8 relative last:mb-0 even:pl-8 hover:bg-gray-200 transition">
-            <article className = "flex flex-col h-full group-even:ml-[18rem] pt-4 pb-7 py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%]">
-                <h3 className="text-2xl font-semibold"> {title} </h3>
-                <p className="mt-2 leading-relaxed"> {description} </p>
-                <ul className ="flex flex-wrap mt-4 gap-2">
-                    {tags.map((tag, index) => (
-                        <li
-                        className = "flex bg-purple-300/[0.70] px-3 py-1 text-[0.70rem] uppercase tracking-wider text-black font-semibold rounded-full"
-                        key={index}>{tag}</li>
-                    ))}
-                </ul>
-                <ul className ="flex flex-wrap h-auto mt-4 gap-2">
-                    {industries.map((industry, index) => (
-                        <li
-                        className = "flex bg-orange-300/[0.70] px-3 py-1 text-[0.70rem] uppercase tracking-wider text-black font-semibold rounded-full"
-                        key={index}>{industry}</li>
-                    ))}
-                </ul>
-            </article>
-            {images.length > 1 ? (
-            <ul className="flex-col justify-between absolute top-8 -right-40">
-                {images.map((image, index) => (
-                <li key={index} className="mb-2">
-                    <Image
-                    className="w-[28.25rem] rounded-lg shadow-2xl transition
-                            group-hover:scale-[1.1]
-                            group-hover:-translate-x-3
-                            group-hover:translate-y-3
-                            group-hover:rotate-2
-
-                            group-even:group-hover:translate-x-3
-                            group-even:group-hover:translate-y-3
-                            group-even:group-hover:rotate-2
-
-                            group-even:right-[initial]
-                            group-even:-left-40"
-                    src={image}
-                    alt={`Image of the project ${title}`}
-                    quality={95}
-                    />
-                </li>
-                ))}
-            </ul>
-            ) : (
-            <Image
-                className="absolute top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl
-                transition
-                group-hover:scale-[1.1]
-                group-hover:-translate-x-3
-                group-hover:translate-y-3
-                group-hover:rotate-2
-
-                group-even:group-hover:translate-x-3
-                group-even:group-hover:translate-y-3
-                group-even:group-hover:rotate-2
-
-                group-even:right-[initial]
-                group-even:-left-40"
-                src={images[0]}
-                alt={`Image of the project ${title}`}
-                quality={95}
-            />
-            )}
-
-        </section>
-    )
 }
