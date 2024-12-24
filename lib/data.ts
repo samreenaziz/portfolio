@@ -77,6 +77,7 @@ export const softwareProjectsData = [
     title: "Cuppa",
     description:
       "This is an MVP of a postpartum peer-support application that I am building as part of my efforts to support women's digital health resources. I am the full-stack developer for this project.",
+    link: "https://cuppa-io.netlify.app/",
     tags: ["React", "Express", "Node.js", "MySQL", "CSS/Sass", "Google Cloud Console", "Google API", "Heroku CLI", "JawsDB"],
     industries: ["Digital Health", "Postpartum Care", "Biomedical Engineering", "Medical Technologies"],
     images: [cuppaImg],
@@ -85,6 +86,7 @@ export const softwareProjectsData = [
     title: "Hunter Safety Education Booking Site",
     description:
       "A course-booking website for a Canadian Hunter Safety Education academy in Toronto. This website is largely a SPA and integrates a booking widget and Framer Motion flip-cards for interactivity",
+    link: "https://topgunacademy.netlify.app/",
     tags: ["React", "Express.js", "Node.js", "MySQL", "CSS/Sass", "Framer Motion"],
     industries: ["Commercial Business"],
     images: [topgunImg],
@@ -93,6 +95,7 @@ export const softwareProjectsData = [
     title: "Promotional Band Site",
     description:
       "An promotional website for a new community group/band. A simple SPA pulling data from a public API using component re-rendering.",
+    link:"https://demobandsite.netlify.app/",
     tags: ["React", "CSS/Sass"],
     industries: ["Art/Music"],
     images: [bandSiteImg],
@@ -101,6 +104,7 @@ export const softwareProjectsData = [
     title: "AirCall",
     description:
       "A web application that enables seamless Wi-Fi calling and communication. Designed for modern businesses, it integrates with various tools to enhance productivity and streamline customer communication.",
+    link:"https://app.netlify.com/sites/aircall993fa7b4/overview",
     tags: ["React.js", "CSS/Sass", "Public API"],
     industries: ["Social Media/Networking"],
     images: [aircallImg],
@@ -110,9 +114,10 @@ export const softwareProjectsData = [
 export const researchData = [
   {
     title: "Master's Thesis",
+    link:"https://repository.library.carleton.ca/concern/etds/vh53ww68b",
     description:
-      "This thesis investigates using centre of pressure (COP) signals from a pressure-sensitive mat to detect patient movement.",
-    tags: ["MATLAB", "Python", "Machine Learning", "Data Science"],
+      "This thesis investigates using centre of pressure (COP) signals from a pressure-sensitive mat to detect patient movement and classify its directionality in real-time. The study achieved improved motion detection with precision = 0.84 and recall = 0.71, and a classifier accuracy of 87.29%, precision = 0.90, and recall = 0.84 after incorporating additional hand-annotated data." ,
+    tags: ["MATLAB", "Python", "Machine Learning", "Data Science", "Electrical Engineering", "Systems Engineering", "Support Vector Machines", "kNN", "Synthetic Minority Oversampling Technique", "Medical Systems AI"],
     industries: ["Biomedical Engineering", "Medical Technologies"],
     images: [thesisImg2, thesisAwardImg, thesisImg],
   },

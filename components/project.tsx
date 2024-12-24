@@ -9,12 +9,13 @@ type ProjectProps = {
     title: string;
     description: string;
     tags: readonly string[];
+    link:string;
     industries: readonly string[];
     images: readonly string[] | readonly StaticImageData[];
   };
 
 
-export default function Project({title, description, tags, industries, images} : ProjectProps){
+export default function Project({title, description, tags, link, industries, images} : ProjectProps){
     const ref = useRef<HTMLDivElement>(null)
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -32,9 +33,9 @@ export default function Project({title, description, tags, industries, images} :
                 opacity:opacityProgress,
             }}
             className="mb-3 sm:mb-8 last:mb-6 flex justify-center">
-            <section className="group rounded-lg bg-gray-100 max-w-[42rem] border h-auto border-black/5 overflow-hidden sm:pr-8 relative even:pl-8 hover:bg-gray-200 transition">
-                <article className = "flex flex-col h-full group-even:ml-[18rem] pt-4 pb-7 py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%]">
-                    <h3 className="text-2xl font-semibold"> {title} </h3>
+            <section className="group rounded-lg  bg-gray-100 max-w-[42rem] border h-auto border-black/5 overflow-hidden sm:pr-8 sm:relative even:pl-8 hover:bg-gray-200 transition">
+                <article className = "flex flex-col sm:h-full group-even:ml-[18rem] pt-4 pb-7 py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%]">
+                    <a href={link} target="_blank" className="text-2xl font-semibold"> {title} </a>
                     <p className="mt-2 leading-relaxed"> {description} </p>
                     <ul className ="flex flex-wrap mt-4 gap-2">
                         {tags.map((tag, index) => (
@@ -52,22 +53,24 @@ export default function Project({title, description, tags, industries, images} :
                     </ul>
                 </article>
                 {images.length > 1 ? (
-                <ul className="flex-col justify-between absolute top-8 -right-40">
+                <ul className="flex-col justify-between sm:absolute sm:top-8 sm:-right-40">
                     {images.map((image, index) => (
                     <li key={index} className="mb-2">
                         <Image
-                        className="w-[28.25rem] rounded-lg shadow-2xl transition
+                        className="sm:w-[28.25rem] rounded-lg shadow-2xl
+                                transition
                                 group-hover:scale-[1.1]
-                                group-hover:-translate-x-3
                                 group-hover:translate-y-3
+                                sm:group-hover:-translate-x-3
+                                sm:group-hover:translate-y-3
                                 group-hover:rotate-2
 
-                                group-even:group-hover:translate-x-3
-                                group-even:group-hover:translate-y-3
-                                group-even:group-hover:rotate-2
+                                sm:group-even:group-hover:translate-x-3
+                                sm:group-even:group-hover:translate-y-3
+                                sm:group-even:group-hover:rotate-2
 
-                                group-even:right-[initial]
-                                group-even:-left-40"
+                                sm:group-even:right-[initial]
+                                sm:group-even:-left-40"
                         src={image}
                         alt={`Image of the project ${title}`}
                         quality={95}
@@ -77,19 +80,21 @@ export default function Project({title, description, tags, industries, images} :
                 </ul>
                 ) : (
                 <Image
-                    className="absolute top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl
+                    className="align-center sm:absolute sm:top-8 sm:-right-40 sm:w-[28.25rem] rounded-lg shadow-2xl
                     transition
                     group-hover:scale-[1.1]
-                    group-hover:-translate-x-3
                     group-hover:translate-y-3
-                    group-hover:rotate-2
 
-                    group-even:group-hover:translate-x-3
-                    group-even:group-hover:translate-y-3
-                    group-even:group-hover:rotate-2
+                    sm:group-hover:-translate-x-3
+                    sm:group-hover:translate-y-3
+                    sm:group-hover:rotate-2
 
-                    group-even:right-[initial]
-                    group-even:-left-40"
+                    sm:group-even:group-hover:translate-x-3
+                    sm:group-even:group-hover:translate-y-3
+                    sm:group-even:group-hover:rotate-2
+
+                    sm:group-even:right-[initial]
+                    sm:group-even:-left-40"
                     src={images[0]}
                     alt={`Image of the project ${title}`}
                     quality={95}
