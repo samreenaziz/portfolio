@@ -4,7 +4,7 @@ export type SectionHeadingProps = {
   children : React.ReactNode;
 };
 
-export default function SectionHeading({ children } : { children:string}) {
+export default function SectionHeading({ children } : SectionHeadingProps) {
   return (
     <h2 className="flex justify-center leading-relaxed text-3xl font-medium capitalize mt-3 mb-2">
         {children}

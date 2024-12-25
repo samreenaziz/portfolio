@@ -144,10 +144,11 @@ export const softwareSkills = [
   "Python",
   "Django",
   "Framer Motion",
-  "Deployment",
+  "Live Deployment",
   "Figma Design",
   "Miro Workshopping",
-  "Asana, Jira"
+  "Asana",
+  "Jira"
 ] as const;
 
 export const mldsSkills = ["Python",

@@ -39,7 +39,7 @@ export default function SkillsCarousel() {
             skills: mldsSkills,
         },
         {
-            title:"...and be a superstar addition to your team all at the same time!",
+            title:"...and be a superstar consultant to take your business to the next level!",
             skills: businessSkills,
         }
     ];
@@ -57,7 +57,22 @@ export default function SkillsCarousel() {
   return (
     <section id="skills" ref={ref} className = "mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
         <SectionHeading>
-            Unicorn Skills
+            <motion.span
+                    initial={{ opacity: 0, rotate:0 }}
+                    animate={{
+                        opacity: 1,
+                        rotate: [0, 10, -10, 10, -10, 10, -10, 5, -5, 0],
+                    }}
+                    className="font-bold text-[#D81B60]"
+                    style={{ transformOrigin: "center", display: "inline-block"  }}
+                    transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                    }}
+                    >
+                    Unicorn
+                </motion.span>
+                <span>&nbsp;Skills</span>
         </SectionHeading>
 
 
