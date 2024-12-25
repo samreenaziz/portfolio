@@ -59,13 +59,12 @@ export default function Project({title, description, tags, link, industries, ima
                         <Image
                         className="sm:w-[28.25rem] rounded-lg shadow-2xl
                                 transition
-                                group-hover:scale-[1.1]
+                                sm:group-hover:scale-[1.1]
+                                sm:group-hover:-translate-x-2
                                 group-hover:translate-y-3
-                                sm:group-hover:-translate-x-3
-                                sm:group-hover:translate-y-3
-                                group-hover:rotate-2
+                                sm:group-hover:rotate-2
 
-                                sm:group-even:group-hover:translate-x-3
+                                sm:group-even:group-hover:translate-x-2
                                 sm:group-even:group-hover:translate-y-3
                                 sm:group-even:group-hover:rotate-2
 
@@ -82,7 +81,7 @@ export default function Project({title, description, tags, link, industries, ima
                 <Image
                     className="align-center sm:absolute sm:top-8 sm:-right-40 sm:w-[28.25rem] rounded-lg shadow-2xl
                     transition
-                    group-hover:scale-[1.1]
+                    sm:group-hover:scale-[1.1]
                     group-hover:translate-y-3
 
                     sm:group-hover:-translate-x-3

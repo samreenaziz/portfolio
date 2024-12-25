@@ -1,12 +1,12 @@
 import React from 'react'
 
-type SectionHeadingProps = {
-    children : React.ReactNode;
+export type SectionHeadingProps = {
+  children : React.ReactNode;
 };
 
 export default function SectionHeading({ children } : { children:string}) {
   return (
-    <h2 className="flex justify-center text-3xl font-medium capitalize my-3 mb-6">
+    <h2 className="flex justify-center leading-relaxed text-3xl font-medium capitalize mt-3 mb-2">
         {children}
     </h2>
   )
