@@ -28,7 +28,7 @@ export default function Projects() {
                 {researchData.map((project, index) => (
                     <React.Fragment key={index}>
                         <Project {...project} />
-                            <div className = "flex font-medium text-2xl justify-center pb-2 sm:pb-4"> Citations & Publications </div>
+                            <div className = "flex font-medium text-2xl justify-center pb-2 pt-2 sm:pb-4"> Citations & Publications </div>
                             <div className="pl-4 pr-4 sm:pl-6 sm:pr-6 lg:pl-8 lg:pr-8">
                                 <ol className="list-decimal px-8 mb-4">
                                     <li>
