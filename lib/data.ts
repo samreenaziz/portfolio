@@ -2,6 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { LuBaby } from "react-icons/lu";
+import { LuHeartHandshake } from "react-icons/lu";
 import cuppaImg from "@/public/cuppa.png";
 import topgunImg from "@/public/topgun.png";
 import bandSiteImg from "@/public/bandsite1.png";
@@ -47,30 +49,63 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Finished Masters of Applied Sciences Degree @ Carleton University",
+    location: "Ottawa, ON, Canada",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Completed a Master's in Biomedical Engineering with a specialization in Data Science. Developed a cutting-edge algorithm for neonatal motion detection using pressure signals, achieving 87.29% accuracy, which enhanced patient monitoring in NICU environments.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "December 2021",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Cognitive & Analytics Consultant @ IBM",
+    location: "Ottawa/Toronto, ON, Canada",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Worked as a technical consultant leveraging data-driven insights to support clients. Focused on virtual assistant development and user-centric solutions as an associate, later expanding to project leadership, enabling enterprise-level analytics and process optimization.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "March 2020 - December 2020",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Intermediate Statistical Analyst @ Aviva",
+    location: "Toronto, ON, Canada",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Built machine learning models and analytics tools to improve marketing efficiency, detect fraud, and forecast business outcomes. Automated data pipelines using Python, improving analysis speed and decision-making. Led initiatives to improve team onboarding and collaboration.",
+    icon: React.createElement(CgWorkAlt),
+    date: "December 2020 - July 2022",
+  },
+  {
+    title: "Engagement Manager @ Validere",
+    location: "Toronto, ON, Canada",
+    description:
+      "Led the implementation of a large-scale software solution, achieving a 700% ROI. Designed metrics for performance scorecards to improve product readiness, reduced downtime, and enhanced data quality. Delivered key client-requested features and contributed to product development.",
+    icon: React.createElement(CgWorkAlt),
+    date: "July 2022 - November 2024",
+  },
+  {
+    title: "Became a Mother to a Future Unicorn",
+    location: "Toronto, ON, Canada",
+    description:
+      "Embarked on the transformative journey of motherhood, embracing new challenges and perspectives. Balanced personal growth with professional endeavors, continuing to pursue impactful projects.",
+    icon: React.createElement(LuBaby),
+    date: "August 2023",
+  },
+  {
+    title: "Graduated from a Software Engineering Bootcamp @ BrainStation",
+    location: "Toronto, Canada",
+    description:
+      "Completed an intensive bootcamp, mastering software engineering concepts like React, JavaScript, DevOps, and deployment. Built and deployed full-stack applications, including the Cuppa digital health app, showcasing technical and design skills.",
+    icon: React.createElement(LuGraduationCap),
+    date: "August 2024",
+  },
+  {
+    title: "Founded AmiLife Digital Solutions",
+    location: "Toronto, Canada",
+    description:
+      "Founded a company focused on creating innovative digital solutions for healthcare, insurance, and lifestyle sectors. Specialized in designing user-first products and algorithms, combining technical expertise with empathetic design.",
+    icon: React.createElement(LuHeartHandshake),
+    date: "November 2024",
   },
 ] as const;
+
 
 export const softwareProjectsData = [
   {
