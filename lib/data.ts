@@ -124,7 +124,7 @@ export const researchData = [
 ];
 
 
-export const skillsData = [
+export const softwareSkills = [
   "HTML",
   "CSS",
   "JavaScript",
@@ -133,6 +133,10 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Git",
+  "Axios",
+  "REST API",
+  "Postman",
+  "Sass",
   "Tailwind",
   "MongoDB",
   "Express",
@@ -140,4 +144,68 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
+  "Deployment",
+  "Figma Design",
+  "Miro Workshopping",
+  "Asana, Jira"
 ] as const;
+
+export const mldsSkills = ["Python",
+  "MATLAB", "SQL", "Hadoop",
+  "Spark", "TensorFlow",
+  "PyTorch", "Scikit-learn",
+  "Keras", "Pandas", "NumPy",
+  "Matplotlib", "Seaborn",
+  "Docker", "Git", "Data preprocessing",
+  "Feature engineering",
+  "Model selection",
+  "Hyperparameter tuning",
+  "Data visualization",
+  "Exploratory data analysis (EDA)",
+  "Supervised learning", "Unsupervised learning",
+  "Deep learning", "NLP", "Time series analysis",
+  "Ensemble methods", "Statistical analysis",
+  "Model deployment"] as const;
+
+  export const businessSkills = [
+    "Strategic planning",
+    "Project management",
+    "Stakeholder communication",
+    "Client relationship management",
+    "Data-driven decision making",
+    "Problem Solving",
+    "Market analysis",
+    "Business development",
+    "Risk assessment",
+    "Process optimization",
+    "Team leadership",
+    "Cross-functional collaboration",
+    "Change management",
+    "Presentation skills",
+    "Financial analysis",
+    "Customer journey mapping",
+    "Operations management"
+  ];
+
+  // export const businessSkills = [
+  //   "Making boss moves (Strategic planning)",
+  //   "Keeping the vibes on track (Project management)",
+  //   "Talking to the big dogs (Stakeholder communication)",
+  //   "Building connections like a pro (Client relationship management)",
+  //   "Counting coins and planning flexes (Budgeting and forecasting)",
+  //   "Making data the main character (Data-driven decision making)",
+  //   "Fixing messes ASAP (Problem-solving)",
+  //   "Spying on the market (Market analysis)",
+  //   "Sealing the deal (Business development)",
+  //   "Avoiding L’s (Risk assessment)",
+  //   "Streamlining the grind (Process optimization)",
+  //   "Leading the squad (Team leadership)",
+  //   "Shaking hands, making plans (Negotiation)",
+  //   "Teamwork makes the dream work (Cross-functional collaboration)",
+  //   "Tracking the wins (Performance tracking)",
+  //   "Rolling with the punches (Change management)",
+  //   "Presenting like a TEDx star (Presentation skills)",
+  //   "Money talks, spreadsheets walk (Financial analysis)",
+  //   "Mapping the glow-up (Customer journey mapping)",
+  //   "Running the show (Operations management)"
+  // ];
