@@ -1,13 +1,11 @@
 "use client";
 //client components are still rendered on server; subsequent renders are done on the client side not server
 
-import React, {useEffect} from 'react';
+import React from 'react';
 import profileImg from "@/public/profile-image.jpg";
 import Image from 'next/image';
 import {motion} from "framer-motion";
-import Link from "next/link";
-import { useInView } from "react-intersection-observer";
-import {BsArrowRight, BsLinkedin} from "react-icons/bs";
+import {BsLinkedin} from "react-icons/bs";
 import {HiDownload} from "react-icons/hi";
 import {FaGithubSquare} from "react-icons/fa";
 import { useActiveSectionContext } from '@/context/active-section-context';
@@ -120,6 +118,9 @@ export default function Intro() {
                 >
                 <span className="font-bold"> A neuroscientist turned biomedical engineer, with 5+ years of experience</span> as a technical consultant, software developer, AI solutioneer, and data scientist.
             </motion.p>
+            <div className="absolute top-0 -z-[5000] w-0 h-0 ">
+                <Image src={profileImg} className="object-cover w-0 h-0" alt=""/>
+            </div>
         </section>
         )
 
