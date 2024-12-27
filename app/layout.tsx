@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Samreen Aziz | Professional Portfolio',
   description: 'Samreen is a data scientist, developer, and tech for social good enthusiast with over 5 years of experience in the tech industry.',
-  image: profileImg.src
+  image: 'https://samreenazizportfolio.vercel.app' + profileImg.src,
 }
 
 export default function RootLayout({
@@ -24,13 +24,20 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <Head>
+        {/* General Meta Tags */}
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <meta property="title" content={metadata.title} />
-        <meta property="description" content={metadata.description} />
-        <meta property="image" content={metadata.image} />
-        <meta property="type" content="website" />
-        <meta property="url" content="https://samreenazizportfolio.vercel.app/" />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content={metadata.image} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://samreenazizportfolio.vercel.app/" />
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={metadata.title} />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta name="twitter:image" content={metadata.image} />
       </Head>
       <body className={`${inter.className} bg-stone-50 text-gray-950 h-[5000px] pt-28 sm:pt-36 sm:px-60` }>
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem]
