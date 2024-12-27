@@ -32,7 +32,7 @@ export default function Contact() {
                 action={async (formData) => {await sendEmail(formData)}}
             >
                 <input type="email" className="h-14 rounded-lg border border-[#581c87]/10 focus:border-[#581c87] focus:border-2 outline-none p-4"  name="senderEmail" required maxLength={500} placeholder="Your email" />
-                <textarea className="h-52 my-3 rounded-lg border border-[#581c87]/10 focus:border-[#581c87] focus:border-2 outline-none p-4" name="senderMessage" required placeholder="Your message"/>
+                <textarea className="h-52 my-3 rounded-lg border border-[#581c87]/10 focus:border-[#581c87] focus:border-2 outline-none p-4" name="senderMessage" required maxLength={5000} placeholder="Your message"/>
                 <button type="submit" className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale:110 hover:scale-105 hover:bg-[#581c87] active:scale-115">
                     Submit
                     <FaPaperPlane
@@ -44,4 +44,4 @@ export default function Contact() {
     )
 }
 
-//
+// can spend time styling this section later with react-email
