@@ -118,9 +118,6 @@ export default function Intro() {
                 >
                 <span className="font-bold"> A neuroscientist turned biomedical engineer, with 5+ years of experience</span> as a technical consultant, software developer, AI solutioneer, and data scientist.
             </motion.p>
-            <div className="absolute top-0 -z-[5000] w-0 h-0 ">
-                <Image src={profileImg} className="object-cover w-0 h-0" alt=""/>
-            </div>
         </section>
         )
 

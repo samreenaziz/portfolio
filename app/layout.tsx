@@ -4,6 +4,8 @@ import Header from '@/components/header'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 import { ToastContainer } from 'react-toastify';
 import Footer from '@/components/footer';
+import Head from 'next/head'
+import profileImg from "@/public/profile-image.jpg"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -11,6 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Samreen Aziz | Professional Portfolio',
   description: 'Samreen is a data scientist, developer, and tech for social good enthusiast with over 5 years of experience in the tech industry.',
+  image:{profileImg}
 }
 
 export default function RootLayout({
