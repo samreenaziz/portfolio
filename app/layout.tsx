@@ -28,7 +28,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <meta name="title" property="og:title" content="Samreen Aziz | Professional Portfolio" />
         <meta property="og:description" content="Samreen is a data scientist, developer, and tech for social good enthusiast with over 5 years of experience in the tech industry." />
-        <meta property="og:image" content="https://samreenazizportfolio.vercel.app/public-image.jpg" />
+        <meta property="og:image" content="https://samreenazizportfolio.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile-image.2da71130.jpg&w=384&q=95" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
