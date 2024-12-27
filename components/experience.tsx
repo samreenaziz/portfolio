@@ -11,7 +11,7 @@ import {experiencesData} from "@/lib/data"
 export default function Experience() {
     const { ref } = useSectionInView("Experience");
     return (
-        <section ref={ref} id="experience">
+        <section ref={ref} id="experience" className="scroll-mt-28">
             <SectionHeading>My Journey</SectionHeading>
             <VerticalTimeline lineColor="">
                 {experiencesData.map((item, index) =>(
@@ -43,4 +43,3 @@ export default function Experience() {
         </section>
         )
     }
-
