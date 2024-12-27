@@ -29,10 +29,10 @@ export const links = [
     name: "Projects",
     hash: "#projects",
   },
-  {
-    name: "Education",
-    hash: "#education",
-  },
+  // {
+  //   name: "Education",
+  //   hash: "#education",
+  // },
   {
     name: "Skills",
     hash: "#skills",
@@ -81,7 +81,7 @@ export const experiencesData = [
     date: "July 2022 - November 2024",
   },
   {
-    title: "Became a Mother to a Future Unicorn",
+    title: "Mama to a Future Unicorn",
     location: "Toronto, ON, Canada",
     description:
       "Embarked on the transformative journey of motherhood, embracing new challenges and perspectives. Balanced personal growth with professional endeavors, continuing to pursue impactful projects.",
