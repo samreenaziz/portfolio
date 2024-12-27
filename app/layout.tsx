@@ -27,10 +27,12 @@ export default function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="title" property="og:title" content="Samreen Aziz | Professional Portfolio" />
-        <meta name = "description" property="og:description" content="Samreen is a data scientist, developer, and tech for social good enthusiast with over 5 years of experience in the tech industry." />
-        <meta property="og:image" content="https://samreenazizportfolio.vercel.app/public-image.jpg?ver=1" />
-        <meta name = "type" property="og:type" content="website" />
-        <meta name =  "url" property="og:url" content="https://samreenazizportfolio.vercel.app/" />
+        <meta property="og:description" content="Samreen is a data scientist, developer, and tech for social good enthusiast with over 5 years of experience in the tech industry." />
+        <meta property="og:image" content="https://samreenazizportfolio.vercel.app/public-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://samreenazizportfolio.vercel.app/" />
       </Head>
       <body className={`${inter.className} bg-stone-50 text-gray-950 h-[5000px] pt-28 sm:pt-36 sm:px-60` }>
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem]
