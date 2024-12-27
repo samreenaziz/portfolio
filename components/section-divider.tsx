@@ -10,7 +10,7 @@ export default function SectionDivider() {
   return (
     <div ref={ref} className="my-20 flex flex-col items-center justify-center">
       <motion.div
-        className="bg-purple-950 my-3 h-5 w-[9rem] rounded-full bg-opacity-20"
+        className="bg-purple-950 my-2 h-3 w-[9rem] rounded-full bg-opacity-20"
         initial={{ opacity: 0.5, y: -80 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -80 }}
         transition={{
@@ -22,7 +22,7 @@ export default function SectionDivider() {
         }}
       ></motion.div>
       <motion.div
-        className="bg-purple-950 my-3 h-5 w-[7rem] rounded-full bg-opacity-40"
+        className="bg-purple-950 my-2 h-3 w-[7rem] rounded-full bg-opacity-40"
         initial={{ opacity: 0, y: -80 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -80 }}
         transition={{
@@ -34,7 +34,7 @@ export default function SectionDivider() {
         }}
       ></motion.div>
       <motion.div
-        className="bg-purple-950 my-3 h-5 w-[5rem] rounded-full bg-opacity-60"
+        className="bg-purple-950 my-2 h-3 w-[5rem] rounded-full bg-opacity-60"
         initial={{ opacity: 0, y: -80 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -80 }}
         transition={{
@@ -46,7 +46,7 @@ export default function SectionDivider() {
         }}
       ></motion.div>
       <motion.div
-        className="bg-purple-950 my-3 h-5 w-[1.8rem] rounded-full bg-opacity-80"
+        className="bg-purple-950 my-2 h-3 w-[1.8rem] rounded-full bg-opacity-80"
         initial={{ opacity: 0, y: -80 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -80 }}
         transition={{

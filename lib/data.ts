@@ -111,7 +111,7 @@ export const softwareProjectsData = [
   {
     title: "Cuppa",
     description:
-      "This is an MVP of a postpartum peer-support application that I am building as part of my efforts to support women's digital health resources. I am the full-stack developer for this project.",
+      "This is an MVP of a postpartum peer-support application that I am building as part of my efforts to support women's digital health resources. I am the full-stack developer for this project and am currently working to build a more comprehensive iOS version of this app with SwiftUI.",
     link: "https://cuppa-io.netlify.app/",
     tags: ["React", "Express", "Node.js", "MySQL", "CSS/Sass", "Google Cloud Console", "Google API", "Heroku CLI", "JawsDB"],
     industries: ["Digital Health", "Postpartum Care", "Biomedical Engineering", "Medical Technologies"],

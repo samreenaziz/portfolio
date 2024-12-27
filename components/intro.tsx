@@ -12,6 +12,7 @@ import {HiDownload} from "react-icons/hi";
 import {FaGithubSquare} from "react-icons/fa";
 import { useActiveSectionContext } from '@/context/active-section-context';
 import {useSectionInView} from '@/lib/hooks'
+import {LuCoffee} from "react-icons/lu"
 
 export default function Intro() {
 
@@ -56,7 +57,7 @@ export default function Intro() {
                 transition={{ type: "tween", delay: 1.0 }}
                 className="mb-10 font-medium px-4 sm:px-9 pt-4 sm:pt-8 text-2xl sm:text-4xl text-center sm:mb:0"
                 >
-                <span className="font-bold text-purple-900 text-4xl">Hello, I'm Samreen Aziz - {""}</span>{" "}
+                <span className="font-bold text-purple-900 text-4xl">Hello, I'm Samreen Aziz, - {""}</span>{" "}
                 <motion.span
                     initial={{ opacity: 0 }}
                     animate={{
@@ -83,10 +84,14 @@ export default function Intro() {
                     delay:0.1,
                 }}
                 >
-                <Link href="#contact"
+                {/* <Link href="#contact"
                     className = "group bg-gray-900 text-white px-7 py-5 flex items-center justify-center gap-2 rounded-full outline-none focus:scale:110 hover:scale-105 hover:bg-gray-950 active:scale-115 transition" onClick={() => {setActiveSection("Contact")}}>
-                    Contact me here <BsArrowRight className="group-hover:translate-x-1 transition"/> {" "}
-                </Link>
+                    Let's Book Coffee! <LuCoffee className="group-hover:translate-x-1 transition"/> {" "}
+                </Link> */}
+                <a href="https://calendar.app.google/Ydn4jahUW1iz6BNK7" target="_blank"
+                    className = "group bg-gray-900 text-white px-7 py-5 flex items-center justify-center gap-2 rounded-full outline-none focus:scale:110 hover:scale-105 hover:bg-gray-950 active:scale-115 transition">
+                    Let's Book Coffee! <LuCoffee className="group-hover:translate-x-1 transition"/> {" "}
+                </a>
                 <a
                     className = "group bg-white justify-center px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale:110 active:scale-115 hover:scale-105 cursor:pointer border border-black/10 transition"
                     href="../public/SamreenAziz_Technical_Resume.pdf"
@@ -105,6 +110,7 @@ export default function Intro() {
                     target="_blank">
                     <FaGithubSquare/> {" "}
                 </a>
+
             </motion.div>
             <motion.p
                 initial={{ opacity: 0 }}
@@ -118,4 +124,5 @@ export default function Intro() {
         )
 
     }
+
 

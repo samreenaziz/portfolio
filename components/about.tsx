@@ -32,7 +32,7 @@ export default function About() {
             </p>
             <p className="mb-3  text-left">
                 &emsp;&emsp;In 2024, I decided to invest in my ambitions and interests, embarking on a <a className="font-medium text-[#D81B60]" target="_blank" href="https://brainstation.io/online/software-engineering-bootcamp">Software Engineering diploma with BrainStation 🔗</a>.
-                This program, along with self-learning modules have equipped me with the skills necessary to:
+                This program, my professional and graduate experiences encouraged me to work towards my goal of improving the health and social landscape by building lasting solutions that put people first. So, I am building a digital solutions consulting and design firm - <a href="https://www.linkedin.com/company/amilife-digital-solutions" className="font-medium text-[#D81B60] underline">AmiLife Digital Solutions</a>, where I strive to:
             </p>
 
             <motion.div
@@ -43,11 +43,11 @@ export default function About() {
                     {[
                         'Partner with organizations and clients dedicated to improving lives and creating a better world through innovative and impactful digital solutions.',
                         'Design and deliver innovative tools to address real-world challenges in healthcare, insurance, and lifestyle sectors.',
-                        'Channel creativity to bring ambitious ideas to life, turning visions into impactful realities.'
+                        'Channel creativity to bring ambitious ideas to life, turning visions into impactful realities (Machine Learning and Generative AI, Access to Information, Data Management and Warehousing, Social Networking for Social Good, Web Development, Digital Consumer Engagement Mapping, Design Thinking, etc.).'
                     ].map((text, index) => (
                         <motion.li
                             key={index}
-                            className="font-medium text-xl text-[#D81B60] mb-5"
+                            className="font-medium text-l text-[#D81B60] mb-5"
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: false }}
@@ -67,14 +67,11 @@ export default function About() {
                     ))}
                 </ol>
             </motion.div>
-
-            {/* <h3>Goals for 2025</h3> */}
-            {/* button for every language I know */}
-
-            {/* <h3> Reviews </h3> */}
-            {/* card for every LinkedIn Review I know */}
-
-
+            <p className = "font-medium py-4">
+                If any of the above sounds interesting to you, I would love to chat more about your vision and how <span className="text-[#D81B60]">AmiLife Digital Solutions</span> can help,
+                please reach out below with the contact form, <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2rfKxRXrzp9EDpoW3b_Agl32hdBixf2g2bw6_QAqklRKi85_5dW9fjhp6EJg2TeqO2is2o_cwj" target="_blank" className="underline">book a call</a>, or visit our <a target="_blank" href="https://www.linkedin.com/company/amilife-digital-solutions" className="font-semi-bold underline">LinkedIn</a> page to learn more!
+                <br></br><span className = "text-gray-400 font-normal" >Website remains under construction until January 2025</span>
+            </p>
         </motion.section>
 
   )
