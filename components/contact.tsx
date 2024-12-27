@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks';
 import {sendEmail} from "@/actions/sendEmail"
 import SubmitBtn from './submit-btn';
+import { toast } from 'react-toastify';
 
 
 export default function Contact() {
@@ -30,13 +31,15 @@ export default function Contact() {
             <form
                 className="mt-10 flex flex-col"
                 action={async (formData) => {const {data, error} = await sendEmail(formData);
+                    console.log(data)
 
                     if (error) {
-                        alert(error);
+                        toast.error(error)
+                        console.log(error)
                         return;
                     }
 
-                    alert('Email sent successfully')
+                    toast.success('Your email was sent! I will get back to you within 24 hours.')
                 }}
             >
                 <input type="email" className="h-14 rounded-lg border border-[#581c87]/10 focus:border-[#581c87] focus:border-2 outline-none p-4"  name="senderEmail" required maxLength={500} placeholder="Your email" />

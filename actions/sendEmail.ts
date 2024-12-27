@@ -37,6 +37,9 @@ export const sendEmail = async (formData: FormData) => {
                 senderEmail:senderEmail as string,
             })
         });
+        if (data && data.error) {
+            throw new Error(`Error from Resend API: ${data.error.message}`);
+        }
 
     } catch (error: unknown) {
         return {
