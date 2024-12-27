@@ -26,11 +26,11 @@ export default function RootLayout({
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content={metadata.image} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://samreenazizportfolio.vercel.app/" />
+        <meta property="title" content={metadata.title} />
+        <meta property="description" content={metadata.description} />
+        <meta property="image" content={metadata.image} />
+        <meta property="type" content="website" />
+        <meta property="url" content="https://samreenazizportfolio.vercel.app/" />
       </Head>
       <body className={`${inter.className} bg-stone-50 text-gray-950 h-[5000px] pt-28 sm:pt-36 sm:px-60` }>
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem]
