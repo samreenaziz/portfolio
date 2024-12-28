@@ -92,7 +92,7 @@ export default function Intro() {
                 </a>
                 <a
                     className = "group bg-white justify-center px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale:110 active:scale-115 hover:scale-105 cursor:pointer border border-black/10 transition"
-                    href="../public/SamreenAziz_Technical_Resume_2024Dec28.pdf"
+                    href="/SamreenAziz_Technical_Resume_2024Dec28.pdf"
                     download
                 >
                     Download CV {" "}
