@@ -32,7 +32,7 @@ export default function About() {
             </p>
             <p className="mb-3  text-left">
                 &emsp;&emsp;In 2024, I decided to invest in my ambitions and interests, embarking on a <a className="font-medium text-[#D81B60]" target="_blank" href="https://brainstation.io/online/software-engineering-bootcamp">Software Engineering diploma with BrainStation 🔗</a>.
-                This program, my professional and graduate experiences encouraged me to work towards my goal of improving the health and social landscape by building lasting solutions that put people first. So, I am building a digital solutions consulting and design firm - <a href="https://www.linkedin.com/company/amilife-digital-solutions" className="font-medium text-[#D81B60] underline">AmiLife Digital Solutions</a>, where I strive to:
+                This program, my professional and graduate experiences encouraged me to work towards my goal of improving the health and social landscape by building lasting solutions that put people first. So, I am building a digital solutions consulting and design firm - <a href="https://www.linkedin.com/company/amilife-digital-solutions" target="_blank" className="font-medium text-[#D81B60] underline">AmiLife Digital Solutions</a>, where I strive to:
             </p>
 
             <motion.div
