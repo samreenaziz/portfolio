@@ -53,6 +53,7 @@ export const experiencesData = [
     location: "Ottawa, ON, Canada",
     description:
       "Completed a Master's in Biomedical Engineering with a specialization in Data Science. Developed a cutting-edge algorithm for neonatal motion detection using pressure signals, achieving 87.29% accuracy, which enhanced patient monitoring in NICU environments.",
+    tools: "MATLAB, Python",
     icon: React.createElement(LuGraduationCap),
     date: "December 2021",
   },
@@ -61,22 +62,25 @@ export const experiencesData = [
     location: "Ottawa/Toronto, ON, Canada",
     description:
       "Worked as a technical consultant leveraging data-driven insights to support clients. Focused on virtual assistant development and user-centric solutions as an associate, later expanding to project leadership, enabling enterprise-level analytics and process optimization.",
+    tools: "Python, Excel, PowerPoint",
     icon: React.createElement(CgWorkAlt),
     date: "March 2020 - December 2020",
   },
   {
-    title: "Intermediate Statistical Analyst @ Aviva",
+    title: "Statistical Analyst II @ Aviva",
     location: "Toronto, ON, Canada",
     description:
       "Built machine learning models and analytics tools to improve marketing efficiency, detect fraud, and forecast business outcomes. Automated data pipelines using Python, improving analysis speed and decision-making. Led initiatives to improve team onboarding and collaboration.",
+    tools: "Python, Excel, PowerPoint, SQL, Hadoop, Postman, sci-kit-learn, numpy, pandas",
     icon: React.createElement(CgWorkAlt),
     date: "December 2020 - July 2022",
   },
   {
-    title: "Engagement Manager @ Validere",
+    title: "Assoc. Engagement Manager @ Validere",
     location: "Toronto, ON, Canada",
     description:
       "Led the implementation of a large-scale software solution, achieving a 700% ROI. Designed metrics for performance scorecards to improve product readiness, reduced downtime, and enhanced data quality. Delivered key client-requested features and contributed to product development.",
+    tools: "Python, Excel, PowerPoint, SQL, Google Business Suite",
     icon: React.createElement(CgWorkAlt),
     date: "July 2022 - November 2024",
   },
@@ -85,6 +89,7 @@ export const experiencesData = [
     location: "Toronto, ON, Canada",
     description:
       "Embarked on the transformative journey of motherhood, embracing new challenges and perspectives. Balanced personal growth with professional endeavors, continuing to pursue impactful projects.",
+    tools: "Multi-tasking, forward thinking, crisis management, leadership, negotiation, time management",
     icon: React.createElement(LuBaby),
     date: "August 2023",
   },
@@ -93,6 +98,7 @@ export const experiencesData = [
     location: "Toronto, Canada",
     description:
       "Completed an intensive bootcamp, mastering software engineering concepts like React, JavaScript, DevOps, and deployment. Built and deployed full-stack applications, including the Cuppa digital health app, showcasing technical and design skills.",
+    tools: "JavaScript, React.js, Typescript, Sass, Axios, PostgreSQL",
     icon: React.createElement(LuGraduationCap),
     date: "August 2024",
   },
@@ -101,6 +107,7 @@ export const experiencesData = [
     location: "Toronto, Canada",
     description:
       "Founded a company focused on creating innovative digital solutions for healthcare, insurance, and lifestyle sectors. Specialized in designing user-first products and algorithms, combining technical expertise with empathetic design.",
+    tools: "Web development, Mobile development, Health Tech Consulting, Data Warehousing, Design Thinking",
     icon: React.createElement(LuHeartHandshake),
     date: "November 2024",
   },

@@ -36,6 +36,7 @@ export default function Experience() {
                             <h3 className="font-semibold capitalize">{item.title}</h3>
                             <p className = "font-normal !mt-0">{item.location}</p>
                             <p className="!mt-1 !font-normal text-gray-700">{item.description}</p>
+                            <p className="!mt-1 text-gray-700"><span className="font-medium">Tools:</span><span className="!font-normal">{" "}{item.tools}</span></p>
                         </VerticalTimelineElement>
                     </React.Fragment>
                 ))}
